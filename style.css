@@ -51,6 +51,15 @@ body {
     animation-delay: 2s;
 }
 
+.recorte{
+    position: absolute;
+    height: 9vw;
+    width: 20vw;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    top: 17vw;
+}
+
 
 
 

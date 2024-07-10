@@ -1,32 +1,90 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    justify-content: center;
     display: flex;
-    margin-top: 30vw;
-}
-.contenedor{
-    height: 32vw;
-    width: 32vw;
-    border-radius: 4vw;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 27px 16px 35px 7px 
-}
-.contenedor2{
-    margin-top: -3vw;
-    height: 32vw;
-    width: 32vw;
-    box-shadow: 20px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 4vw;
-    box-shadow: 27px 16px 35px 7px 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:#f8f8f8 ;
 }
 
-.circulo{
+.safari{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #f2f2f2;
+    border-radius: 50px;
+    box-shadow: 0 30px 20px #ccc,
+    0 30px 30px rgba(0,0,0,0.25),
+    0 28px 0 rgba(0,0,0,0.5),
+    0 50px 60px rgba(0,0,0,0.1);
+}
+.circle-lines{
     position: absolute;
-    width: 27vw;
-    height: 27vw;
-    background-color: rgb(58, 58, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 35px;
+    background: linear-gradient(#1ec9ff,#2971e7);
     border-radius: 50%;
-    margin-left: 3vw;
+    box-shadow: 0 -5px 0 5px rgba(0,0,0,0.15) inset 0 10px 0 rgba(0,0,0,0.1);
+}
+
+.circle-lines span{
+    background: #f2f2f2;
+    position: absolute;
+    width: 2px;
+    height: 24px;
+    transform: translateY(-137.55px) rotate(calc(10deg*var(--i)));
+    transform-origin: 0px 150px;
+    filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.15));
+
+}
+
+.circle-lines span::after{
+    background: #fff;
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 12px;
+    transform: rotate(5deg);
+    transform-origin: 0 150px;
+}
+.niddle{
     
-    margin-top: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 36px;
+    inset: 50px;
+    transform: translateX(130px) rotate(45deg);
+    filter: drop-shadow(0 0 4px rgba(0,0,0,0.25));
+    transition: 2s cubic-bezier(1,-0.39,0.5,1);
+}
+
+.niddle::before{
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 150px solid rgb(231,51,51);
+    content: "";
+    position: absolute;
+    top: -150px;
+    height: 150px;
+}
+
+.niddle::after{
+    content: "";
+    border-bottom: 150px solid white;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    top:-150px;
+    height: 150px;
+}
+
+.safari:hover .niddle{
+    transform: translateX(130px) rotate(405deg);
 }

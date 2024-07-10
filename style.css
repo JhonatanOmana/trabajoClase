@@ -1,67 +1,70 @@
-body{
+body {
     background-color: black;
     width: 100vw;
-    height: 50vw;
-}
-.contenedor{
+    height: 100vh;
+    margin: auto;
     display: flex;
     justify-content: center;
-    margin-top: 30vw;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .vertical{
     width: 4vw;
-    height: 20vw;
-    background-color: red;  
+    height: 0vw; 
+    background-color: red;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
     animation-name: primer;
-    animation-duration: 2s;
-    height: 20vw;
+    animation-delay: 0s;
 }
 
-@keyframes primer {
-    0%{margin-top: 20vw;}
-    0%{height: 0vw;}
-    100%{margin-top: 0vw;}
-    100%{height: 20vw;}
-    
-}
-
-.diagonal{
-    width: 4.6vw;
-    height: 20vw;
+.diagonal {
+    width: 5vw; 
+    height: 0vw; 
     background-color: red;
     transform: skew(22deg);
-    box-shadow: -27px -16px 35px -7px;
-   
-    animation-name: second;
-    animation-duration: 2s;
-    animation-delay: 1s;
-}   
-
-
-@keyframes second {
-    0%{height: 0vw;}
-    100%{height: 20vw;}
-    
-    
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-name: segunda;
+    animation-delay: 1s; 
+    box-shadow: -27px -16px 35px -7px 
 }
-    
 
 .vertical2{
     width: 4vw;
-    height: 20vw;
+    height: 0vw; 
     background-color: red;
-    margin-left: 0vw;
-   
-    animation-name: ter;
-    animation-duration: 2s;
-    animation-delay: 3;
-    
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-name: tercera;
+    animation-delay: 2s;
 }
 
-@keyframes ter {
-    0%{height: 0vw;}
-    100%{height: 20vw;}
-    
+
+
+
+@keyframes primer {
+    0% { height: 0vw;}
+    100% {height: 20vw;}
 }
 
+@keyframes segunda {
+    0% {height: 0vw; }
+    100% {height: 20vw; }
+}
+
+@keyframes tercera{
+    0% {height: 0vw; }
+    100% {height: 20vw; }
+}

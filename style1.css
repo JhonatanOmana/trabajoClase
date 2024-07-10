@@ -4,25 +4,29 @@ body{
     margin-top: 30vw;
 }
 .contenedor{
-    height: 34vw;
+    height: 32vw;
     width: 32vw;
     border-radius: 4vw;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 27px 16px 35px 7px 
 }
 .contenedor2{
     margin-top: -3vw;
     height: 32vw;
     width: 32vw;
     box-shadow: 20px;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     border-radius: 4vw;
+    box-shadow: 27px 16px 35px 7px 
 }
 
 .circulo{
-    width: 25vw;
-    height: 25vw;
-    background-color: blue;
+    position: absolute;
+    width: 27vw;
+    height: 27vw;
+    background-color: rgb(58, 58, 219);
     border-radius: 50%;
-    margin: auto;
+    margin-left: 3vw;
+    
     margin-top: 2.5vw;
 }
